@@ -10,7 +10,7 @@ public class SocialHousingLoan extends Loan {
     public SocialHousingLoan(
             String loanId,
             BigDecimal amount,
-            int termMonths,
+            Integer termMonths,
             BigDecimal governmentSubsidieAmount) {
         super(loanId, amount, termMonths);
         this.governmentSubsidieAmount = governmentSubsidieAmount

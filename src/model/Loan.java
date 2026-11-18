@@ -3,13 +3,14 @@ package model;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+//clase abstracta de prestamo
 public abstract class Loan {
 
     private final String loanId;
     private final BigDecimal amount;
-    private final int termMonths;
+    private final Integer termMonths;
 
-    protected Loan(String loanId, BigDecimal amount, int termMonths) {
+    protected Loan(String loanId, BigDecimal amount, Integer termMonths) {
         this.loanId = loanId;
         //redondea el amount
         this.amount = amount.setScale(2, RoundingMode.HALF_UP);
@@ -24,7 +25,7 @@ public abstract class Loan {
         return amount;
     }
 
-    public int getTermMonths() {
+    public Integer getTermMonths() {
         return termMonths;
     }
 

@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 //aplicamos la interface a record
+//credito aprobado
 public record ApprovedStatus(
         BigDecimal approvedAmount,
         BigDecimal calculatedInstallment) implements ApplicationStatus {

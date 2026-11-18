@@ -9,10 +9,10 @@ public enum PlatformStatus {
 
     //
     private final String description;
-    private final boolean applicationsAllowed;
+    private final Boolean applicationsAllowed;
 
     //contructor del enum
-    PlatformStatus(String description, boolean applicationsAllowed) {
+    PlatformStatus(String description, Boolean applicationsAllowed) {
         this.description = description;
         this.applicationsAllowed = applicationsAllowed;
     }
@@ -21,7 +21,7 @@ public enum PlatformStatus {
         return description;
     }
 
-    public boolean allowsApplications() {
+    public Boolean allowsApplications() {
         return applicationsAllowed;
     }
 

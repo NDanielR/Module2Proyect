@@ -32,7 +32,7 @@ public class App {
         Loan pendingLoan = null;
 
         // inicio del programa
-        boolean running = true;
+        Boolean running = true;
 
         // menu
         while (running) {
@@ -99,7 +99,7 @@ public class App {
                             BigDecimal requestedAmount = new BigDecimal(scanner.nextLine());
 
                             System.out.print("Plazo en meses: ");
-                            int termMonths = Integer.parseInt(scanner.nextLine());
+                            Integer termMonths = Integer.parseInt(scanner.nextLine());
 
                             //creamos el objeto dependiendo del tipo de credito escojido
                             Loan loan;
@@ -182,7 +182,7 @@ public class App {
                     
                     //si pendingloan no es null guardamos el credito usando registerloan
                     else {
-                        boolean registered = portfolioManager.registerLoan(pendingLoan);
+                        Boolean registered = portfolioManager.registerLoan(pendingLoan);
 
                         if (registered) {
                             System.out.println("Crédito registrado exitosamente.");

@@ -3,6 +3,7 @@ package model;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+//clase para creditos de emprendimiento
 public class EntrepreneurLoan extends Loan {
 
     private static final BigDecimal INTEREST_RATE =
@@ -11,7 +12,7 @@ public class EntrepreneurLoan extends Loan {
     public EntrepreneurLoan(
             String loanId,
             BigDecimal amount,
-            int termMonths
+            Integer termMonths
     ) {
         super(loanId, amount, termMonths);
     }

@@ -13,7 +13,7 @@ public class PortfolioManager {
     private Integer loanCount = 0;
 
     //mtd de registrar prestamos
-    public boolean registerLoan(Loan loan) {
+    public Boolean registerLoan(Loan loan) {
         //si el contador de prestamos es mayor igual que el tamaño del array
         if (loanCount >= loans.length) {
             System.out.println(
