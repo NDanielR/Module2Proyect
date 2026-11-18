@@ -1,2 +1,18 @@
-bin/
+# Archivos compilados de Java
 *.class
+
+# Paquetes y ejecutables
+# *.jar
+# *.war
+# *.ear
+# *.nar
+
+# Carpetas de compilación (Maven / Gradle / IDEs)
+# target/
+# build/
+# out/
+bin/
+
+# Logs de errores de la JVM
+# hs_err_pid*
+# replay_pid*
