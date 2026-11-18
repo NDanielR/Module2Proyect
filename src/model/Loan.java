@@ -11,6 +11,7 @@ public abstract class Loan {
 
     protected Loan(String loanId, BigDecimal amount, int termMonths) {
         this.loanId = loanId;
+        //redondea el amount
         this.amount = amount.setScale(2, RoundingMode.HALF_UP);
         this.termMonths = termMonths;
     }

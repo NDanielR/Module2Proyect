@@ -10,7 +10,7 @@ public class PortfolioManager {
     //creamos un array con 10 espacios de prestamos 
     private final Loan[] loans = new Loan[10];
     //contador para saber cuantos prestamos tenemos
-    private int loanCount = 0;
+    private Integer loanCount = 0;
 
     //mtd de registrar prestamos
     public boolean registerLoan(Loan loan) {
@@ -47,12 +47,16 @@ public class PortfolioManager {
     }
 
     public BigDecimal calculateTotalPlacedAmount() {
+        //inicializamos variable
         BigDecimal total = BigDecimal.ZERO;
 
+
         for (int i = 0; i < loanCount; i++) {
+            //suma los montos de los creditos
             total = total.add(loans[i].getAmount());
         }
 
+        //retorna el total redondeado
         return total.setScale(2, RoundingMode.HALF_UP);
     }
 }
